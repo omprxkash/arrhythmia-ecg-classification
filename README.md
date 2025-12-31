@@ -7,6 +7,16 @@
 
 ---
 
+## Research Paper
+
+**Deep Learning Benchmark for Cardiac Arrhythmia Classification from Multi-Lead ECG Signals Using 1D-CNN, ResNet, BiLSTM, and CNN-Transformer Architectures**
+
+Omprakash Pugazhendhi — Department of Computer Science and Engineering, Vellore Institute of Technology, Chennai, India
+
+[Read the full paper (PDF)](paper/arrhythmia_ecg_classification_ieee.pdf)
+
+---
+
 ## Overview
 
 I built this project to explore deep learning approaches for detecting and classifying cardiac arrhythmias from raw ECG signals. The MIT-BIH Arrhythmia Database serves as the benchmark — a gold standard in cardiac signal research with 48 half-hour, two-lead recordings at 360 Hz, annotated by expert cardiologists.
@@ -75,7 +85,7 @@ Four convolutional blocks (Conv1D → BatchNorm → ReLU → MaxPool) with chann
 **File:** [src/models/cnn_1d.py](src/models/cnn_1d.py)
 
 ### ResNet-1D
-Stem convolution followed by four residual stages (64→128→256→512 channels). Each residual block uses pre-activation (BN→ReLU→Conv→BN→ReLU→Conv) with a 1×1 projection shortcut when dimensions change. Skip connections allow gradients to flow through 20+ layers without vanishing — the key idea from the reference paper (arXiv:2303.03660).
+Stem convolution followed by four residual stages (64→128→256→512 channels). Each residual block uses pre-activation (BN→ReLU→Conv→BN→ReLU→Conv) with a 1×1 projection shortcut when dimensions change. Skip connections allow gradients to flow through 20+ layers without vanishing.
 
 **File:** [src/models/resnet_1d.py](src/models/resnet_1d.py)
 
@@ -161,17 +171,6 @@ python results/generate_results.py
 Open any notebook directly in Colab — each notebook has an install cell at the top.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/omprxkash/arrhythmia-ecg-classification/blob/main/notebooks/01_data_exploration.ipynb)
-
----
-
-## Research Paper
-
-**Deep Learning Benchmark for Cardiac Arrhythmia Classification from Multi-Lead ECG Signals Using 1D-CNN, ResNet, BiLSTM, and CNN-Transformer Architectures**  
-Omprakash Pugazhendhi — Department of Computer Science and Engineering, Vellore Institute of Technology, Chennai, India
-
-[Read the paper (PDF)](paper/arrhythmia_ecg_classification_ieee.pdf)
-
-The paper covers the full methodology: dataset description, preprocessing pipeline, all four model architectures with layer tables, experimental setup, benchmark results, and a discussion of class imbalance handling and Grad-CAM interpretability. Published in IEEE conference format.
 
 ---
 
