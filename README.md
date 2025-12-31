@@ -166,17 +166,12 @@ Open any notebook directly in Colab — each notebook has an install cell at the
 
 ## Research Paper
 
-This project is accompanied by a full IEEE conference paper:
-
 **Deep Learning Benchmark for Cardiac Arrhythmia Classification from Multi-Lead ECG Signals Using 1D-CNN, ResNet, BiLSTM, and CNN-Transformer Architectures**  
 Omprakash Pugazhendhi — Department of Computer Science and Engineering, Vellore Institute of Technology, Chennai, India
 
-| Format | File |
-|--------|------|
-| Compiled PDF | [paper/arrhythmia_ecg_classification_ieee.pdf](paper/arrhythmia_ecg_classification_ieee.pdf) |
-| LaTeX source | [paper/arrhythmia_classification_ieee.tex](paper/arrhythmia_classification_ieee.tex) |
+[Read the paper (PDF)](paper/arrhythmia_ecg_classification_ieee.pdf)
 
-The paper covers the full methodology: dataset description, preprocessing pipeline, all four model architectures with layer tables, experimental setup, benchmark results, and discussion of class imbalance handling and Grad-CAM interpretability. Written in IEEE IEEEtran two-column conference format.
+The paper covers the full methodology: dataset description, preprocessing pipeline, all four model architectures with layer tables, experimental setup, benchmark results, and a discussion of class imbalance handling and Grad-CAM interpretability. Published in IEEE conference format.
 
 ---
 
@@ -210,8 +205,7 @@ arrhythmia-ecg-classification/
 │   ├── baseline/              # per-model .pth checkpoints and plots (generated)
 │   └── improved/              # augmentation ablation outputs (generated)
 └── paper/
-    ├── arrhythmia_classification_ieee.tex    # IEEE LaTeX source
-    └── arrhythmia_ecg_classification_ieee.pdf  # compiled paper
+    └── arrhythmia_ecg_classification_ieee.pdf  # IEEE conference paper
 ```
 
 ---
